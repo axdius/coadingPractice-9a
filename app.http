@@ -1,0 +1,31 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "ashu",
+    "username": "anadius",
+    "password": "anadius25",
+    "gender": "Male",
+    "location": "Agra"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "axadisu",
+    "password": "axadius25"
+}
+
+###
+ 
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+    "username": "axadisu",
+    "oldPassword": "anadius",
+    "newPassword": "asd"
+}
