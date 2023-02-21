@@ -28,7 +28,7 @@ const initializeDBAndServer = async () => {
 };
 initializeDBAndServer();
 
-app.post("/users", async (request, response) => {
+app.post("/register", async (request, response) => {
   const { username, name, password, gender, location } = request.body;
   const hashedPassword = await bcrypt.hash(password, 10);
   const selectUserQuery = `
